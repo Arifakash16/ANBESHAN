@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 
-const HomeScreen = ({setSearch}) => {
+const HomeScreen = ({setSearch,openVoiceSearch}) => {
   //input
   const [input,setInput]= useState('');
   const handleSubmit=(e)=>{
@@ -45,7 +45,7 @@ const HomeScreen = ({setSearch}) => {
             </form>
             <script src="https://kit.fontawesome.com/e1df079133.js" crossorigin="anonymous"></script>
             {input ?<i className="fa-solid fa-xmark mx-1"style={{cursor:"pointer"}}onClick={clearInput}></i>:null}
-            <button type="button" className="btn mx-1" >
+            <button type="button" onClick={()=>openVoiceSearch()} className="btn mx-1" >
               <i className="fa fa-microphone"></i>
             </button>
           </div>

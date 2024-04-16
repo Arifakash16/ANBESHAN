@@ -2,11 +2,11 @@ import React from 'react'
 import Navbar from './Navbar'
 import HomeScreen from './HomeScreen'
 
-const Home = ({setSearch}) => {
+const Home = ({setSearch,openVoiceSearch}) => {
   return (
     <>
        <Navbar />
-       <HomeScreen setSearch={setSearch}/>
+       <HomeScreen setSearch={setSearch} openVoiceSearch={openVoiceSearch} />
 
 
     </>

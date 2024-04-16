@@ -5,7 +5,7 @@ import Header from './Header'
 import SearchData from './searchData';
 
 
-const SearchScreen = ({searchTerm,googleData,setSearch}) => {
+const SearchScreen = ({searchTerm,googleData,setSearch,openVoiceSearch}) => {
   const history= useHistory();
   console.log('Check',googleData);
   
@@ -22,7 +22,7 @@ const SearchScreen = ({searchTerm,googleData,setSearch}) => {
   
   return (
     <>
-     <Header searchTerm={searchTerm} setSearch={setSearch} />
+     <Header searchTerm={searchTerm} setSearch={setSearch} openVoiceSearch={openVoiceSearch} />
       <div className="container mx-auto">
         <div className="grid grid-rows-1">
          <SearchData googleData={googleData}/>

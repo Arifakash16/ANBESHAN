@@ -8,7 +8,7 @@ import { FaUser } from "react-icons/fa6";
 
 
 
-const SearchHeader = ({searchTerm,setSearch}) => {
+const SearchHeader = ({searchTerm,setSearch,openVoiceSearch}) => {
     const[searchText,setSearchText]=useState('');
     useEffect(()=>{setSearchText (searchTerm)},[searchTerm])
     const handleSubmit=(e)=>{
@@ -41,7 +41,7 @@ const SearchHeader = ({searchTerm,setSearch}) => {
                 <div className="absolute start-[530px] text-xl bottom-3 flex items-center justify-end gap-1">
                 {searchText?(<FaRegTimesCircle onClick={clearInput} />)  :null}
                 <CiSearch onClick={handleButton} />
-                <TiMicrophone />
+                <TiMicrophone onClick={()=>openVoiceSearch()} />
                 </div>
             </form>
            
