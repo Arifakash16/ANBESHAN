@@ -5,8 +5,7 @@ import Home from './Components/HomeScreen';
 import SearchScreen from './Components/SearchScreen';
 import VoiceSearch from './Components/VoiceSearch';
 import { searchData } from './api/GoogleSearch';
-
-
+import { recognition } from "./api/voiceRecognition";
 
 
 
@@ -31,10 +30,27 @@ const App=()=>{
 
   const openVoiceSearch = () =>{
     setVoiceSearch(true);
+    recognition.start();
+    recognition.onresult = (event)=>{
+    const {transcript}  = event.results[0][0];
+      
+      if(transcript !== null || transcript !== "" || transcript !== " ")
+      {
+        setVoiceSearch(false);
+        setSearch(transcript); 
+        
+      }
+      else
+      {
+        setVoiceSearch(false);
+        alert("Please try again for voice search"); 
+      }
+    }
   }
 
   const closeVoiceSearch = () =>{
     setVoiceSearch(false);
+    recognition.stop();
   }
 
 
