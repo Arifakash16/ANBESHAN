@@ -13,7 +13,7 @@ import { recognition } from "./api/voiceRecognition";
 
 const App=()=>{         
   const history =useHistory();
-  const [searchTerm,setSearchTerm]=useState('fullyWorld');
+  const [searchTerm,setSearchTerm]=useState('');
   const [googleData,setGoogleData]=useState([]);
   const [voiceSearch,setVoiceSearch] = useState(false);
   

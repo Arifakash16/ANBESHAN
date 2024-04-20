@@ -12,7 +12,7 @@ const SearchSubHeader = () => {
          <div className=" ">
             <div className="">
                 <ul className='nav flex items-center gap-4'>
-                    <li className='' >
+                    {/* <li className='' >
                         <Link to={'/'} className='flex items-center justify-center no-underline '>
                         
                         <CiSearch className='relative bottom-2'></CiSearch>
@@ -21,7 +21,7 @@ const SearchSubHeader = () => {
                        
                         
                         </Link>
-                        </li>
+                        </li> */}
 
                         {/* <li className='' >
                         <Link to={'/'} className='flex items-center justify-center no-underline '>
@@ -44,7 +44,7 @@ const SearchSubHeader = () => {
                         </li> */}
 
 
-                        <li className='' >
+                        {/* <li className='' >
                         <Link to={'/'} className='flex items-center justify-center no-underline '>
                         
                         <GiNewspaper className='relative bottom-2'></GiNewspaper>
@@ -53,7 +53,7 @@ const SearchSubHeader = () => {
                        
                         
                         </Link>
-                        </li>
+                        </li> */}
                        
 
                       
@@ -63,22 +63,22 @@ const SearchSubHeader = () => {
   
 
 
-                        <li className='' >
+                        {/* <li className='' >
                         <Link to={'/'} className='flex items-center justify-center no-underline '>
                         
                         <PiImageSquareFill className='relative bottom-2'></PiImageSquareFill>
                        
                        <p className=''>Images</p>
                         </Link>
-                        </li>
+                        </li> */}
                        
-                        <li className='' >
+                        {/* <li className='' >
                         <Link to={'/'} className='flex items-center justify-center no-underline '>
                         <CgDetailsMore className='relative bottom-2'></CgDetailsMore>
                        
                        <p className=''>More</p>
                         </Link>
-                        </li>
+                        </li> */}
 
                         
                        
